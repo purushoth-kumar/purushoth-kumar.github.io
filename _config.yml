@@ -1,0 +1,36 @@
+# site settings
+title: Forty
+subtitle: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: # the subpath of your site, e.g. /blog
+url: purushoth-kumar.github.io # the base hostname & protocol for your site
+author: Purushoth Kumar
+street_address: 1234 Somewhere Road
+city: Some Place
+state: Some State
+zip_code: 000000
+country: India
+phone: 100
+
+# homepage tiles
+tiles-source: Hello..!! # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+500px_url:
+facebook_url: https://www.facebook.com/purushoth.iitkgp
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url: https://instagram.com/_purushoth
+linkedin_url: https://www.linkedin.com/in/purushothkumar
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/__purushoth
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
