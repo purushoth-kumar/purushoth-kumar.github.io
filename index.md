@@ -2,7 +2,7 @@
 layout: home
 title: Home
 landing-title: 'Hi, my name is Purushoth'
-description: null
+description: Hello
 image: null
 author: null
 show_tile: false
