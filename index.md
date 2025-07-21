@@ -33,3 +33,9 @@ https://fonts.google.com/specimen/Source+Sans+Pro
   <p>Explore my work in data science, analytics, and AI.</p>
   <a href="/projects/" class="btn">View Projects</a>
 </section>
+
+<footer>
+  <div style="text-align:center; padding:1em 0;">
+    <!-- You can add your own copyright or leave blank -->
+  </div>
+</footer>

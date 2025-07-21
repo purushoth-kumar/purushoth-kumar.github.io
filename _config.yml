@@ -42,7 +42,7 @@ nav:
 # Plugins (GitHub Pages safe)
 plugins:
   - jekyll-remote-theme
-  - jekyll-feed
+#  - jekyll-feed  # Disabled to remove feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
