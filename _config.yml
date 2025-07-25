@@ -67,7 +67,7 @@ nav:
 
 # Custom CSS (add your custom styles here if needed)
 custom_css:
-  - /assets/css/custom.css
+  - assets/css/custom.css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
