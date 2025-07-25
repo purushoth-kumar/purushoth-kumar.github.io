@@ -2,7 +2,7 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Site settings
-title: "Purushoth Kumar Portfolio"
+title: "<i class='fa fa-home'></i>"
 email: youremailaddress@gmail.com
 description: "Data Scientist | ML Engineer | Visual Storyteller"
 url: "https://purushoth-kumar.github.io"
