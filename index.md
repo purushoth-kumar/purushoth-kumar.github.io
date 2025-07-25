@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Home"
+title: " "
 ---
 
 <div style="text-align:center; margin-top:2em;">

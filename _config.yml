@@ -1,8 +1,9 @@
 # Minimal Mistakes theme settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: minimal-mistakes-jekyll
 
 # Site settings
-title: "<i class='fa fa-home'></i>"
+title: "Home"
 email: youremailaddress@gmail.com
 description: "Data Scientist | ML Engineer | Visual Storyteller"
 url: "https://purushoth-kumar.github.io"
