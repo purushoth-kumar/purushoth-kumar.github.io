@@ -326,4 +326,4 @@ defaults:
       share: true
       related: true
 custom_css:
-  - /assets/css/custom.css
+  - assets/css/custom.css
