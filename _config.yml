@@ -60,3 +60,13 @@ social:
   links:
     - "https://github.com/purushoth-kumar"
     - "https://www.linkedin.com/in/purushothkumar"
+
+---
+layout: collection
+title: "Projects"
+permalink: /projects/
+collection: projects
+---
+
+custom_css:
+  - /assets/css/custom.css
