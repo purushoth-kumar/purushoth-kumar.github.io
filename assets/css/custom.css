@@ -1,6 +1,6 @@
-body, .site, .wrapper, .page__content {
+html, body, .site, .wrapper, .page, .page__content, .layout--page, .layout--splash {
   background-color: transparent !important;
-  background-image: 
+  background-image:
     linear-gradient(135deg, #e0e0e0 25%, transparent 25%),
     linear-gradient(225deg, #e0e0e0 25%, transparent 25%),
     linear-gradient(315deg, #e0e0e0 25%, transparent 25%),
