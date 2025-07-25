@@ -91,3 +91,6 @@ custom_css:
 
 # Remove recent posts from homepage by setting show_excerpts: false and removing related config
 show_excerpts: false
+
+include:
+  - assets/css/custom.css
