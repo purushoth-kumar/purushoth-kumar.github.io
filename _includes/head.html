@@ -1,0 +1,26 @@
+{% comment %} Copied from Minimal Mistakes default _includes/head.html {% endcomment %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+
+{% seo %}
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
+{% if site.custom_css %}
+  {% for path in site.custom_css %}
+    <link rel="stylesheet" href="{{ path | relative_url }}">
+  {% endfor %}
+{% endif %}
+
+{% if site.custom_js %}
+  {% for path in site.custom_js %}
+    <script src="{{ path | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+
+<!-- Any other head includes from the theme can go here --> 
