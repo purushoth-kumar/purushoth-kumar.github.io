@@ -11,10 +11,10 @@
           <li class="masthead__menu-item"><a href="/about/">About</a></li>
           <li class="masthead__menu-item" style="display: flex; flex-direction: column; align-items: flex-start;">
             <a href="/resume_purushoth.pdf" download>Download Resume</a>
-            <span style="font-size: 0.7em; color: #888; margin-top: -0.5em;">
+            <span style="font-size: 0.6em; color: #888; margin-top: -0.7em;">
               {% assign resume = site.static_files | where: "path", "/resume_purushoth.pdf" | first %}
               {% if resume %}
-                last updated on {{ resume.modified_time | date: "%B %d, %Y" }}
+                (Updated on: {{ resume.modified_time | date: "%B %d, %Y" }})
               {% else %}
                 (file not found)
               {% endif %}
