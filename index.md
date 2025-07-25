@@ -1,6 +1,6 @@
 ---
-layout: page
-title: ""
+layout: home
+title: "Home"
 ---
 
 <div style="text-align:center; margin-top:2em;">

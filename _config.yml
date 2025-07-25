@@ -63,7 +63,3 @@ social:
 
 custom_css:
   - /assets/css/custom.css
-  - assets/css/custom.css
-custom_stylesheets:
-  - /assets/css/custom.css
-  - assets/css/custom.css
