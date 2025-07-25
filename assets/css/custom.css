@@ -1,4 +1,8 @@
-html, body, .site, .wrapper, .page, .page__content, .layout--page, .layout--splash {
+body {
+  border: 5px solid red !important;
+}
+
+html, body, .site, .wrapper, .page, .page__content, .layout--page, .layout--splash, .page__inner-wrap, .initial-content {
   background-color: transparent !important;
   background-image:
     linear-gradient(135deg, #e0e0e0 25%, transparent 25%),
