@@ -10,4 +10,8 @@ body {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
+}
+/* Hide recent posts section on the homepage */
+.archive, .home .archive, .home .entries-list, .home .archive__subtitle {
+  display: none !important;
 } 
