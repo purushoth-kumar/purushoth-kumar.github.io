@@ -1,4 +1,4 @@
-/* ===== MODERN PORTFOLIO CUSTOM CSS ===== */
+/* ===== MODERN PORTFOLIO CUSTOM CSS (TEAL ACCENT) ===== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
@@ -85,10 +85,9 @@ body.dark-mode .navbar a, body.dark-mode .navbar-custom a {
   color: var(--text-light);
 }
 
-/* Button styles */
 .btn, .btn-primary {
   background: var(--accent-teal);
-  color: #fff;
+  color: #fff !important;
   border: none;
   border-radius: 999px;
   padding: 0.75rem 2rem;
@@ -96,31 +95,37 @@ body.dark-mode .navbar a, body.dark-mode .navbar-custom a {
   box-shadow: 0 2px 8px rgba(20,184,166,0.08);
   transition: background 0.2s, color 0.2s;
   display: inline-block;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0.25rem 0.5rem;
 }
 .btn:hover, .btn-primary:hover {
   background: var(--accent-teal-dark);
-  color: #fff;
+  color: #fff !important;
 }
 .btn-secondary {
   background: transparent;
-  color: var(--accent-teal);
+  color: var(--accent-teal) !important;
   border: 2px solid var(--accent-teal);
   border-radius: 999px;
   padding: 0.75rem 2rem;
   font-weight: 600;
   transition: background 0.2s, color 0.2s;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0.25rem 0.5rem;
 }
 .btn-secondary:hover {
   background: var(--accent-teal);
-  color: #fff;
+  color: #fff !important;
 }
 body.dark-mode .btn-secondary {
-  color: var(--accent-teal-light);
+  color: var(--accent-teal-light) !important;
   border-color: var(--accent-teal-light);
 }
 body.dark-mode .btn-secondary:hover {
   background: var(--accent-teal-light);
-  color: #181f23;
+  color: #181f23 !important;
 }
 
 /* Card styles */
@@ -140,10 +145,14 @@ body.dark-mode .card {
 hr {
   border: none;
   border-top: 1px solid #e5e7eb;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
 }
 body.dark-mode hr {
   border-top: 1px solid #23272f;
+}
+
+section, .section {
+  margin-bottom: 2.5rem;
 }
 
 /* Responsive */
@@ -151,6 +160,7 @@ body.dark-mode hr {
   .btn, .btn-primary, .btn-secondary {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
+    min-width: 120px;
   }
   .card {
     padding: 1rem;
