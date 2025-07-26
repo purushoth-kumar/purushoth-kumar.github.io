@@ -37,8 +37,8 @@ plugins:
   - jekyll-remote-theme
 
 # Beautiful Jekyll specific settings
-avatar-img: /assets/images/forty.jpg
-title-img: /assets/images/forty.jpg
+# avatar-img: /assets/images/forty.jpg
+# title-img: /assets/images/forty.jpg
 subtitle: "Senior Applied Data Scientist"
 description: "Transforming data into actionable insights through advanced analytics, machine learning, and causal inference. Passionate about building recommendation systems and driving product decisions with data."
 
@@ -47,7 +47,7 @@ author: "Purushoth Kumar"
 author-title: "Senior Applied Data Scientist"
 author-location: "India"
 author-email: "purushoth.iitkgp@gmail.com"
-author-avatar: "/assets/images/forty.jpg"
+# author-avatar: "/assets/images/forty.jpg"
 author-bio: "Data Scientist passionate about ML, AI, and data visualization."
 
 # Social media
