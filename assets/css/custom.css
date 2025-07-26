@@ -1071,14 +1071,26 @@ body.light-theme .btn:hover, body.light-theme .btn--primary:hover, body.light-th
 }
 
 /* ===== ENSURE HERO TEXT IS VISIBLE ===== */
-.hero__title, .hero__subtitle, .hero__description {
+.hero__title {
   color: #fff !important;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  font-weight: 800 !important;
+  text-shadow: none !important;
 }
-body.light-theme .hero__title, body.light-theme .hero__subtitle, body.light-theme .hero__description {
-  color: var(--text-primary) !important;
-  text-shadow: none;
-} 
+
+.hero__subtitle {
+  color: #fff !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+.hero__description {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+
+.section--hero::before {
+  opacity: 0.15 !important;
+}
 
 /* ===== FORCE STYLES WITH MAXIMUM SPECIFICITY ===== */
 body .masthead,
