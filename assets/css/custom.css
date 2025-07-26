@@ -1276,17 +1276,19 @@ body .hero__description {
 body .hero__title {
   font-size: 3rem !important;
   font-weight: 800 !important;
-  color: #f5f5dc !important;
+  color: #f5f5dc !important; /* Force beige color */
   margin: 0 !important;
   padding: 0 !important;
+  background: transparent !important;
 }
 
 body .hero__subtitle {
   font-size: 2rem !important;
   font-weight: 700 !important;
-  color: #f5f5dc !important;
+  color: #f5f5dc !important; /* Force beige color */
   margin: 1rem 0 !important;
   padding: 0 !important;
+  background: transparent !important;
 }
 
 body .hero__description {
@@ -1330,4 +1332,71 @@ body.light-theme .site-title,
 body.light-theme .site-title * {
   color: #2d3748 !important; /* Darker color for light mode nav */
   opacity: 1 !important;
+} 
+
+/* ===== THEME TOGGLE FIX ===== */
+body .theme-toggle {
+  position: absolute !important;
+  top: 12px !important;
+  right: 24px !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  background: #8b5cf6 !important;
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+  cursor: pointer !important;
+  z-index: 1100 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  flex-grow: 0 !important;
+}
+
+/* ===== HERO TEXT VISIBILITY FIX ===== */
+body .hero__title,
+body .hero__subtitle,
+body .hero__description {
+  color: #f5f5dc !important; /* Solid beige for hero text */
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+body .hero__title {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  color: #f5f5dc !important; /* Force beige color */
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+body .hero__subtitle {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #f5f5dc !important; /* Force beige color */
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+body .hero__description {
+  font-size: 1.2rem !important;
+  color: rgba(245, 245, 220, 0.4) !important; /* Keep description with transparency */
+  margin: 1rem auto 2rem auto !important;
+  padding: 0 !important;
+}
+
+/* ===== OVERRIDE ANY BLACK COLOR ===== */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #f5f5dc !important; /* Force beige for all headings */
+}
+
+body .hero__title, body .hero__subtitle {
+  color: #f5f5dc !important; /* Double force beige for hero text */
+  background: transparent !important;
 } 
