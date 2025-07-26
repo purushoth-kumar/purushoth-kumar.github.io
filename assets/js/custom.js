@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ===== TYPING EFFECT FOR HERO TITLE =====
+    // COMMENTED OUT: This was causing the hero title to be hidden
+    /*
     const heroTitle = document.querySelector('.hero__title');
     if (heroTitle) {
         const text = heroTitle.textContent;
@@ -88,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Start typing effect after a delay
         setTimeout(typeWriter, 500);
     }
+    */
 
     // ===== CARD HOVER EFFECTS =====
     const cards = document.querySelectorAll('.card, .project-card');
@@ -131,6 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ===== LOADING ANIMATION =====
+    // COMMENTED OUT: This was hiding the hero text by setting opacity to 0
+    /*
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
         
@@ -143,8 +148,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }, index * 200);
         });
     });
+    */
 
-    // ===== CURSOR EFFECT (OPTIONAL) =====
+    // ===== CURSOR EFFECT (COMMENTED OUT) =====
+    // COMMENTED OUT: This was creating the purple circle that follows the cursor
+    /*
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
     cursor.style.cssText = `
@@ -164,6 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cursor.style.left = e.clientX - 10 + 'px';
         cursor.style.top = e.clientY - 10 + 'px';
     });
+    */
 
     // ===== BUTTON CLICK EFFECTS =====
     const buttons = document.querySelectorAll('.btn');
@@ -276,12 +285,15 @@ style.textContent = `
         }
     }
     
+    /* COMMENTED OUT: This was hiding the hero text by default
     .hero__title, .hero__subtitle, .hero__description {
         opacity: 0;
         transform: translateY(30px);
         transition: all 0.8s ease;
     }
+    */
     
+    /* COMMENTED OUT: Custom cursor styles
     .custom-cursor {
         transition: transform 0.1s ease;
     }
@@ -289,6 +301,7 @@ style.textContent = `
     .custom-cursor:hover {
         transform: scale(1.5);
     }
+    */
     
     .theme-toggle:hover {
         transform: scale(1.1);
