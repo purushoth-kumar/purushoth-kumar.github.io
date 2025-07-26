@@ -1,173 +1,158 @@
-/* ===== BEAUTIFUL JEKYLL CUSTOMIZATIONS ===== */
+/* ===== MODERN PORTFOLIO CUSTOM CSS ===== */
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
-/* ===== GLOBAL STYLES ===== */
+:root {
+  --accent-teal: #14b8a6;
+  --accent-teal-dark: #0f766e;
+  --accent-teal-light: #5eead4;
+  --bg-light: #f8fafc;
+  --bg-dark: #181f23;
+  --text-main: #22223b;
+  --text-light: #f8fafc;
+  --text-muted: #64748b;
+  --card-bg-light: #fff;
+  --card-bg-dark: #23272f;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.7;
+  background: var(--bg-light);
+  color: var(--text-main);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-light);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
-/* ===== HERO SECTION ===== */
-.hero-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.1), transparent),
-    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.1), transparent),
-    radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.1), transparent);
-  background-repeat: repeat;
-  background-size: 200px 100px;
-  animation: float 20s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px) rotate(0deg); }
-  100% { transform: translateY(-100px) rotate(360deg); }
-}
-
-/* ===== BUTTON STYLES ===== */
-.btn {
-  transition: all 0.3s ease;
+a {
+  color: var(--accent-teal);
   text-decoration: none;
-  display: inline-flex;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--accent-teal-dark);
+}
+
+/* Navbar toggle button */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--accent-teal);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  outline: none;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
+}
+.theme-toggle-btn:hover {
+  color: var(--accent-teal-dark);
+}
+
+body.dark-mode .theme-toggle-btn {
+  color: var(--accent-teal-light);
+}
+body.dark-mode .theme-toggle-btn:hover {
+  color: var(--accent-teal);
+}
+
+/* Navbar styling */
+.navbar, .navbar-custom {
+  background: var(--card-bg-light);
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(20,184,166,0.04);
+}
+body.dark-mode .navbar, body.dark-mode .navbar-custom {
+  background: var(--card-bg-dark);
+  border-bottom: 1px solid #23272f;
+  box-shadow: 0 2px 8px rgba(20,184,166,0.10);
+}
+
+.navbar a, .navbar-custom a {
+  color: var(--text-main);
   font-weight: 600;
-  border-radius: 50px;
-  padding: 1rem 2rem;
+}
+body.dark-mode .navbar a, body.dark-mode .navbar-custom a {
+  color: var(--text-light);
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  text-decoration: none;
+/* Button styles */
+.btn, .btn-primary {
+  background: var(--accent-teal);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(20,184,166,0.08);
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
 }
-
-.btn-primary {
-  background: #667eea;
-  color: white;
-  border: 2px solid #667eea;
+.btn:hover, .btn-primary:hover {
+  background: var(--accent-teal-dark);
+  color: #fff;
 }
-
-.btn-primary:hover {
-  background: #5a6fd8;
-  border-color: #5a6fd8;
-  color: white;
-}
-
 .btn-secondary {
   background: transparent;
-  color: #667eea;
-  border: 2px solid #667eea;
+  color: var(--accent-teal);
+  border: 2px solid var(--accent-teal);
+  border-radius: 999px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
 }
-
 .btn-secondary:hover {
-  background: #667eea;
-  color: white;
+  background: var(--accent-teal);
+  color: #fff;
+}
+body.dark-mode .btn-secondary {
+  color: var(--accent-teal-light);
+  border-color: var(--accent-teal-light);
+}
+body.dark-mode .btn-secondary:hover {
+  background: var(--accent-teal-light);
+  color: #181f23;
 }
 
-/* ===== CARD STYLES ===== */
+/* Card styles */
 .card {
-  transition: all 0.3s ease;
+  background: var(--card-bg-light);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 16px rgba(20,184,166,0.06);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+body.dark-mode .card {
+  background: var(--card-bg-dark);
+  box-shadow: 0 4px 16px rgba(20,184,166,0.12);
+}
+
+hr {
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+body.dark-mode hr {
+  border-top: 1px solid #23272f;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-/* ===== DARK MODE ADJUSTMENTS ===== */
-body.dark {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-}
-
-body.dark .card {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
-}
-
-body.dark .btn-secondary {
-  color: #667eea;
-  border-color: #667eea;
-}
-
-body.dark .btn-secondary:hover {
-  background: #667eea;
-  color: white;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
+/* Responsive */
 @media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2.5rem !important;
+  .btn, .btn-primary, .btn-secondary {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
   }
-  
-  .hero-section h2 {
-    font-size: 1.5rem !important;
+  .card {
+    padding: 1rem;
   }
-  
-  .hero-section p {
-    font-size: 1.1rem !important;
-  }
-  
-  .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-/* ===== CUSTOM SCROLLBAR ===== */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #667eea;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #5a6fd8;
 } 
