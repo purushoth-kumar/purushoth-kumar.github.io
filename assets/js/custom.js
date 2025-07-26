@@ -1,7 +1,30 @@
 // ===== SCROLL ANIMATIONS & INTERACTIVE EFFECTS =====
 
 document.addEventListener('DOMContentLoaded', function() {
-    
+    // ===== THEME TOGGLE BUTTON LOGIC =====
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        if (themeToggle) themeToggle.innerHTML = '☀️';
+    } else if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.body.classList.remove('light-theme');
+        if (themeToggle) themeToggle.innerHTML = '🌙';
+    }
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('light-theme');
+            if (document.body.classList.contains('light-theme')) {
+                themeToggle.innerHTML = '☀️';
+                localStorage.setItem('theme', 'light');
+            } else {
+                themeToggle.innerHTML = '🌙';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+
     // ===== SCROLL ANIMATIONS =====
     const observerOptions = {
         threshold: 0.1,
@@ -194,35 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const docHeight = document.body.scrollHeight - window.innerHeight;
         const scrollPercent = (scrollTop / docHeight) * 100;
         progressBar.style.width = scrollPercent + '%';
-    });
-
-    // ===== THEME TOGGLE (OPTIONAL) =====
-    const themeToggle = document.createElement('button');
-    themeToggle.className = 'theme-toggle';
-    themeToggle.innerHTML = '🌙';
-    themeToggle.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: none;
-        background: var(--bg-glass);
-        backdrop-filter: blur(20px);
-        color: var(--text-primary);
-        font-size: 1.2rem;
-        cursor: pointer;
-        z-index: 1000;
-        transition: all 0.3s ease;
-        border: 1px solid var(--border-primary);
-    `;
-    
-    document.body.appendChild(themeToggle);
-    
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-theme');
-        themeToggle.innerHTML = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
     });
 
     // ===== PARTICLE EFFECT FOR HERO =====
