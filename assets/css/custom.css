@@ -923,7 +923,20 @@ body.light-theme h1, body.light-theme h2 {
   background: none;
 }
 
-/* ===== THEME TOGGLE BUTTON IN NAVBAR ===== */
+/* ===== NAVBAR FIXES ===== */
+.masthead {
+  background: rgba(30, 41, 59, 0.92) !important;
+  border-bottom: 1px solid var(--border-primary);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+.masthead__menu-item a {
+  color: #fff !important;
+  font-weight: 600;
+}
+.masthead__menu-item a:hover {
+  color: var(--accent-cyan) !important;
+  background: rgba(139, 92, 246, 0.12) !important;
+}
 .theme-toggle {
   position: absolute;
   top: 12px;
@@ -932,9 +945,8 @@ body.light-theme h1, body.light-theme h2 {
   height: 38px;
   border-radius: 50%;
   border: none;
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  color: var(--text-primary);
+  background: rgba(51, 65, 85, 0.85);
+  color: #fff;
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 1100;
@@ -945,6 +957,122 @@ body.light-theme h1, body.light-theme h2 {
   justify-content: center;
 }
 .theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  background: var(--accent-purple);
+  color: #fff;
+}
+
+/* ===== SECTION & CARD CONTRAST ===== */
+.section {
+  background: rgba(30, 41, 59, 0.96);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-xl);
+  box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+}
+.section--hero {
+  background: linear-gradient(135deg, #232946 0%, #1a2233 100%) !important;
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+}
+.card, .project-card, .skill-category, .about-content, .contact-info {
+  background: rgba(51, 65, 85, 0.92) !important;
+  color: #fff !important;
+  border: 1px solid var(--border-primary);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+.card__title, .project-card__title, .about-content h2, .about-content h3, .contact-info h3 {
+  color: #fff !important;
+}
+.card__subtitle, .project-card__company {
+  color: var(--accent-cyan) !important;
+}
+
+/* ===== TEXT & BUTTON CONTRAST ===== */
+h1, h2, h3, h4, h5, h6, p, li, .btn, .card__content, .project-card__description {
+  color: #fff !important;
+}
+.btn, .btn--primary, .btn--secondary, .btn--outline {
+  color: #fff !important;
+  background: var(--accent-purple) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.18);
+}
+.btn--primary {
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple)) !important;
+}
+.btn--secondary {
+  background: var(--accent-purple) !important;
+}
+.btn--outline {
+  background: transparent !important;
+  border: 2px solid var(--accent-cyan) !important;
+  color: var(--accent-cyan) !important;
+}
+.btn:hover, .btn--primary:hover, .btn--secondary:hover, .btn--outline:hover {
+  background: var(--accent-cyan) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(6, 182, 212, 0.18);
+}
+
+/* ===== SECTION SPACING ===== */
+.section {
+  padding: var(--space-2xl) 0 !important;
+}
+
+/* ===== CARD SPACING ===== */
+.card, .project-card, .skill-category {
+  margin-bottom: var(--space-lg);
+}
+
+/* ===== LIGHT THEME OVERRIDES ===== */
+body.light-theme .masthead {
+  background: rgba(255,255,255,0.98) !important;
+  color: var(--text-primary) !important;
+}
+body.light-theme .masthead__menu-item a {
+  color: var(--text-primary) !important;
+}
+body.light-theme .masthead__menu-item a:hover {
+  color: var(--accent-purple) !important;
+  background: rgba(139, 92, 246, 0.10) !important;
+}
+body.light-theme .section, body.light-theme .section--hero {
+  background: #f8fafc !important;
+  color: var(--text-primary) !important;
+}
+body.light-theme .card, body.light-theme .project-card, body.light-theme .skill-category, body.light-theme .about-content, body.light-theme .contact-info {
+  background: #fff !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-primary);
+}
+body.light-theme .card__title, body.light-theme .project-card__title, body.light-theme .about-content h2, body.light-theme .about-content h3, body.light-theme .contact-info h3 {
+  color: var(--text-primary) !important;
+}
+body.light-theme .card__subtitle, body.light-theme .project-card__company {
+  color: var(--accent-purple) !important;
+}
+body.light-theme .btn, body.light-theme .btn--primary, body.light-theme .btn--secondary, body.light-theme .btn--outline {
+  color: #fff !important;
+  background: var(--accent-purple) !important;
+}
+body.light-theme .btn--primary {
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan)) !important;
+}
+body.light-theme .btn--outline {
+  background: transparent !important;
+  border: 2px solid var(--accent-purple) !important;
+  color: var(--accent-purple) !important;
+}
+body.light-theme .btn:hover, body.light-theme .btn--primary:hover, body.light-theme .btn--secondary:hover, body.light-theme .btn--outline:hover {
+  background: var(--accent-cyan) !important;
+  color: #fff !important;
+}
+
+/* ===== ENSURE HERO TEXT IS VISIBLE ===== */
+.hero__title, .hero__subtitle, .hero__description {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+body.light-theme .hero__title, body.light-theme .hero__subtitle, body.light-theme .hero__description {
+  color: var(--text-primary) !important;
+  text-shadow: none;
 } 
