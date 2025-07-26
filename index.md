@@ -7,7 +7,7 @@ description: "Transforming data into actionable insights through advanced analyt
 
 <div class="hero-section" style="text-align: center; padding: 4rem 0 2rem 0;">
   <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">R M Purushoth Kumar</h1>
-  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--accent-teal);">Senior Applied Data Scientist</h2>
+  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--accent-teal, #14b8a6);">Senior Applied Data Scientist</h2>
   <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; line-height: 1.6;">
     Transforming data into actionable insights through advanced analytics, machine learning, and causal inference.<br>
     Passionate about building recommendation systems and driving product decisions with data.
