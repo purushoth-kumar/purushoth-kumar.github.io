@@ -6,5 +6,29 @@ layout: default
 <main id="main" class="page-content" aria-label="Content">
   <div class="wrapper">
     {{ content }}
+    
+    <!-- Fallback Hero Section -->
+    <section class="section section--hero" style="min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="hero" style="text-align: center; position: relative; z-index: 10;">
+          <h1 class="hero__title" style="font-size: 3rem; font-weight: 800; color: #ffffff; margin: 0; padding: 0;">R M Purushoth Kumar</h1>
+          <h2 class="hero__subtitle" style="font-size: 2rem; font-weight: 700; color: #ffffff; margin: 1rem 0;">Senior Applied Data Scientist</h2>
+          <p class="hero__description" style="font-size: 1.2rem; color: #ffffff; max-width: 700px; margin: 1rem auto 2rem auto;">
+            Transforming data into actionable insights through advanced analytics, machine learning, and causal inference. 
+            Passionate about building recommendation systems and driving product decisions with data.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="/projects/" class="btn btn--primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #8b5cf6; color: #ffffff; text-decoration: none; border-radius: 0.5rem; font-weight: 600;">
+              <i class="fas fa-rocket"></i>
+              View Projects
+            </a>
+            <a href="/about/" class="btn btn--secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: transparent; color: #ffffff; text-decoration: none; border: 2px solid #8b5cf6; border-radius: 0.5rem; font-weight: 600;">
+              <i class="fas fa-user"></i>
+              About Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </main> 
