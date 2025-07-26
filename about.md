@@ -32,8 +32,6 @@ permalink: /about/
         
         <p>
           Currently working at <strong>Games 24x7</strong> as a Senior Applied Data Scientist, 
-          I've built contextual multi-armed bandit systems using XGBoost and SquareCB algorithms 
-          that have improved user retention by 7% month-over-month and increased ARPU by 1.2%.
         </p>
         
         <p>
@@ -117,10 +115,8 @@ permalink: /about/
         <p style="color: var(--text-secondary); margin-bottom: var(--space-md);">April 2022 – Present</p>
         <div class="card__content">
           <ul style="color: var(--text-secondary); line-height: 1.7;">
-            <li>Built contextual multi-armed bandit systems using XGBoost and SquareCB algorithms</li>
-            <li>Improved user retention by 7% month-over-month and increased ARPU by 1.2%</li>
-            <li>Used IPW (Inverse Probability Weighting) to de-bias training data</li>
-            <li>Led experimentation and analytics for product optimization</li>
+            <li>Filler Text</li>
+            <li>Filler Text</li>
           </ul>
         </div>
       </div>
