@@ -1399,4 +1399,31 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 body .hero__title, body .hero__subtitle {
   color: #f5f5dc !important; /* Double force beige for hero text */
   background: transparent !important;
+}
+
+/* ===== LIGHT MODE OVERRIDES ===== */
+/* Light mode - darker text for hero */
+body.light-theme .hero__title,
+body.light-theme .hero__subtitle,
+body.light-theme .hero__description {
+  color: #2d3748 !important; /* Darker color for light mode */
+  text-shadow: none !important;
+}
+
+body.light-theme .hero__title {
+  color: #2d3748 !important; /* Darker for light mode */
+}
+
+body.light-theme .hero__subtitle {
+  color: #2d3748 !important; /* Darker for light mode */
+}
+
+body.light-theme .hero__description {
+  color: rgba(45, 55, 72, 0.4) !important; /* Darker with transparency for light mode */
+}
+
+/* Light mode - darker headings */
+body.light-theme h1, body.light-theme h2, body.light-theme h3, 
+body.light-theme h4, body.light-theme h5, body.light-theme h6 {
+  color: #2d3748 !important; /* Darker for light mode */
 } 
