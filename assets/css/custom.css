@@ -1236,3 +1236,60 @@ body .hero__description {
   margin: 1rem 0 !important;
   padding: 0 !important;
 } 
+
+/* ===== NAVIGATION FIXES ===== */
+body .masthead,
+body .masthead *,
+body .masthead__inner-wrap,
+body .masthead__inner-wrap *,
+body nav.greedy-nav,
+body nav.greedy-nav * {
+  background: #232946 !important;
+  color: #f5f5dc !important; /* Beige color for nav in dark mode */
+  text-align: center !important;
+}
+
+body .masthead__menu-item a,
+body .masthead__menu-item span,
+body .site-title,
+body .site-title * {
+  color: #f5f5dc !important; /* Beige color for nav text */
+  background: transparent !important;
+  text-align: center !important;
+}
+
+/* ===== TEXT COLOR OVERHAUL ===== */
+/* Dark mode - beige text with 40% transparency */
+body h1, body h2, body h3, body h4, body h5, body h6,
+body p, body li, body span, body div {
+  color: rgba(245, 245, 220, 0.4) !important; /* Beige with 40% transparency */
+}
+
+/* Light mode - darker text with 40% transparency */
+body.light-theme h1, body.light-theme h2, body.light-theme h3, 
+body.light-theme h4, body.light-theme h5, body.light-theme h6,
+body.light-theme p, body.light-theme li, body.light-theme span, 
+body.light-theme div {
+  color: rgba(30, 41, 59, 0.4) !important; /* Darker shade with 40% transparency */
+}
+
+/* Keep nav bar text solid (no transparency) */
+body .masthead *,
+body .masthead__menu-item a,
+body .masthead__menu-item span,
+body .site-title,
+body .site-title * {
+  color: #f5f5dc !important; /* Solid beige for nav */
+  opacity: 1 !important;
+}
+
+/* Light mode nav bar */
+body.light-theme .masthead,
+body.light-theme .masthead *,
+body.light-theme .masthead__menu-item a,
+body.light-theme .masthead__menu-item span,
+body.light-theme .site-title,
+body.light-theme .site-title * {
+  color: #2d3748 !important; /* Darker color for light mode nav */
+  opacity: 1 !important;
+} 
