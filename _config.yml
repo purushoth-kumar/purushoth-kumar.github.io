@@ -18,17 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: " "
+title: "R M Purushoth Kumar"
 email: purushoth.iitkgp@gmail.com
 description: >-
-  Data Scientist | ML Engineer | Visual Storyteller
+  Senior Applied Data Scientist | ML Engineer | Visual Storyteller
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
-github_username:  purushoth-kumar
+github_username: purushoth-kumar
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+remote_theme: "daattali/beautiful-jekyll@5.0.0"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -36,38 +36,43 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
+# Beautiful Jekyll specific settings
+avatar-img: /assets/images/forty.jpg
+title-img: /assets/images/forty.jpg
+subtitle: "Senior Applied Data Scientist"
+description: "Transforming data into actionable insights through advanced analytics, machine learning, and causal inference. Passionate about building recommendation systems and driving product decisions with data."
+
 # Author settings
-author:
-  name: "Purushoth Kumar"
-  avatar: "/assets/images/forty.jpg"
-  bio: "Data Scientist passionate about ML, AI, and data visualization."
-  location: "India"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/purushoth-kumar"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/purushothkumar"
+author: "Purushoth Kumar"
+author-title: "Senior Applied Data Scientist"
+author-location: "India"
+author-email: "purushoth.iitkgp@gmail.com"
+author-avatar: "/assets/images/forty.jpg"
+author-bio: "Data Scientist passionate about ML, AI, and data visualization."
+
+# Social media
+social-network-links:
+  github: purushoth-kumar
+  linkedin: purushothkumar
+  email: purushoth.iitkgp@gmail.com
+
+# Navigation
+navbar-links:
+  About Me: "about"
+  Projects: "projects"
+  Resume: "resume_purushoth.pdf"
+
+# Theme settings
+theme: beautiful-jekyll
+navbar-color: dark
+sidebar-color: dark
+footer-color: dark
 
 # Collections
 collections:
   projects:
     output: true
     permalink: /projects/:path/
-
-# Navigation
-nav:
-  - title: "<i class='fa fa-home'></i>"
-    url: "/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "About"
-    url: "/about/"
-
-# Custom CSS (add your custom styles here if needed)
-custom_css:
-  - assets/css/custom.css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
