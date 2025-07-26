@@ -1171,3 +1171,26 @@ body .theme-toggle {
   color: #ffffff !important;
   border: 2px solid #ffffff !important;
 } 
+
+.section--hero {
+  position: relative;
+}
+
+.hero {
+  position: relative !important;
+  z-index: 10 !important;
+  color: #fff !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.hero__title, .hero__subtitle, .hero__description {
+  position: relative !important;
+  z-index: 11 !important;
+  color: #fff !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+} 
