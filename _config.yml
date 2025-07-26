@@ -98,3 +98,7 @@ show_excerpts: false
 
 include:
   - assets/css/custom.css
+
+# Remove site.title as brand, use a home icon for the navbar brand
+# (Beautiful Jekyll uses site.title for the brand by default, so we will override in the navbar)
+site_icon: "fa fa-home"

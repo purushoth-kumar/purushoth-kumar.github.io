@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom top-nav-regular">
+  <a class="navbar-brand navbar-brand-logo" href="/">
+    <i class="fa fa-home"></i>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+      {% for link in site.navbar-links %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ link[1] }}">{{ link[0] }}</a>
+      </li>
+      {% endfor %}
+      <li class="nav-item">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
+      </li>
+    </ul>
+  </div>
+</nav> 

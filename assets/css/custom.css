@@ -41,6 +41,19 @@ a:hover {
   color: var(--accent-teal-dark);
 }
 
+.navbar-brand {
+  font-size: 1.7rem;
+  color: var(--accent-teal) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar-brand .fa-home {
+  font-size: 1.7rem;
+  color: var(--accent-teal) !important;
+  margin-right: 0.2rem;
+}
+
 /* Navbar toggle button */
 .theme-toggle-btn {
   background: none;
@@ -153,6 +166,14 @@ body.dark-mode hr {
 
 section, .section {
   margin-bottom: 2.5rem;
+}
+
+/* Section backgrounds for consistency */
+section, .section, .card {
+  background: #f8fafc;
+}
+body.dark-mode section, body.dark-mode .section, body.dark-mode .card {
+  background: #23272f;
 }
 
 /* Responsive */
