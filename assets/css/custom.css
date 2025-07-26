@@ -1194,3 +1194,45 @@ body .theme-toggle {
   opacity: 1 !important;
   text-shadow: none !important;
 } 
+
+/* ===== COMPLETE HERO OVERRIDE ===== */
+body .hero,
+body .hero *,
+body .hero__title,
+body .hero__subtitle,
+body .hero__description {
+  color: #ffffff !important;
+  background: transparent !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 999 !important;
+  text-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: inherit !important;
+}
+
+body .hero__title {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body .hero__subtitle {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+}
+
+body .hero__description {
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+} 
