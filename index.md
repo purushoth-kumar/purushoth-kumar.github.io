@@ -30,7 +30,7 @@ title: " "
 <!-- Featured Section -->
 <section class="section">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 fade-in-up">
       <h2>What I Do</h2>
       <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">
         I specialize in data science and analytics, focusing on causal inference, recommendation systems, and product analytics.
@@ -38,7 +38,7 @@ title: " "
     </div>
     
     <div class="project-grid">
-      <div class="card">
+      <div class="card fade-in-up" style="animation-delay: 0.1s;">
         <div class="card__subtitle">Data Science</div>
         <h3 class="card__title">Causal Inference & A/B Testing</h3>
         <div class="card__content">
@@ -46,7 +46,7 @@ title: " "
         </div>
       </div>
       
-      <div class="card">
+      <div class="card fade-in-up" style="animation-delay: 0.2s;">
         <div class="card__subtitle">Machine Learning</div>
         <h3 class="card__title">Recommendation Systems</h3>
         <div class="card__content">
@@ -54,7 +54,7 @@ title: " "
         </div>
       </div>
       
-      <div class="card">
+      <div class="card fade-in-up" style="animation-delay: 0.3s;">
         <div class="card__subtitle">Analytics</div>
         <h3 class="card__title">Product Analytics & Insights</h3>
         <div class="card__content">
@@ -68,7 +68,7 @@ title: " "
 <!-- Skills Preview Section -->
 <section class="section" style="background: var(--bg-secondary);">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5 fade-in-up">
       <h2>Technical Expertise</h2>
       <p style="max-width: 600px; margin: 0 auto; color: var(--text-secondary);">
         Proficient in modern data science tools and technologies
@@ -76,7 +76,7 @@ title: " "
     </div>
     
     <div class="skills-grid">
-      <div class="skill-category">
+      <div class="skill-category slide-in-left">
         <h3>Programming</h3>
         <div class="skill-list">
           <span class="skill-tag">Python</span>
@@ -86,7 +86,7 @@ title: " "
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category fade-in-up">
         <h3>Machine Learning</h3>
         <div class="skill-list">
           <span class="skill-tag">XGBoost</span>
@@ -96,7 +96,7 @@ title: " "
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category slide-in-right">
         <h3>Analytics</h3>
         <div class="skill-list">
           <span class="skill-tag">Causal Inference</span>
@@ -106,7 +106,7 @@ title: " "
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category scale-in">
         <h3>Tools & Platforms</h3>
         <div class="skill-list">
           <span class="skill-tag">AWS</span>
@@ -122,7 +122,7 @@ title: " "
 <!-- CTA Section -->
 <section class="section">
   <div class="container">
-    <div class="text-center">
+    <div class="text-center fade-in-up">
       <h2>Let's Work Together</h2>
       <p style="max-width: 600px; margin: 0 auto 2rem auto; color: var(--text-secondary);">
         I'm always interested in new opportunities and collaborations. Let's discuss how we can work together to solve complex data challenges.
