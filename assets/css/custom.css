@@ -1079,3 +1079,54 @@ body.light-theme .hero__title, body.light-theme .hero__subtitle, body.light-them
   color: var(--text-primary) !important;
   text-shadow: none;
 } 
+
+/* ===== FORCE STYLES WITH MAXIMUM SPECIFICITY ===== */
+body .masthead,
+body .masthead *,
+body .masthead__inner-wrap,
+body .masthead__inner-wrap *,
+body nav.greedy-nav,
+body nav.greedy-nav * {
+  background: #232946 !important;
+  color: #ffffff !important;
+}
+
+body .masthead__menu-item a,
+body .masthead__menu-item span,
+body .site-title,
+body .site-title * {
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+body .section,
+body .section *,
+body .card,
+body .card *,
+body .project-card,
+body .project-card *,
+body .about-content,
+body .about-content *,
+body .skill-category,
+body .skill-category *,
+body .contact-info,
+body .contact-info * {
+  color: #ffffff !important;
+  background: rgba(51, 65, 85, 0.98) !important;
+  border: 2px solid #8b5cf6 !important;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6,
+body p, body li, body span, body div {
+  color: #ffffff !important;
+}
+
+/* Force theme toggle visibility */
+body .theme-toggle {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: #8b5cf6 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+} 
