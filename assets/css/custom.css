@@ -924,18 +924,19 @@ body.light-theme h1, body.light-theme h2 {
 }
 
 /* ===== NAVBAR FIXES ===== */
-.masthead {
-  background: rgba(30, 41, 59, 0.92) !important;
-  border-bottom: 1px solid var(--border-primary);
+.masthead, .masthead__inner-wrap, nav.greedy-nav {
+  background: #232946 !important;
+  color: #fff !important;
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 .masthead__menu-item a {
   color: #fff !important;
-  font-weight: 600;
 }
-.masthead__menu-item a:hover {
-  color: var(--accent-cyan) !important;
-  background: rgba(139, 92, 246, 0.12) !important;
+nav.greedy-nav {
+  background: transparent !important;
+}
+.masthead__inner-wrap {
+  background: transparent !important;
 }
 .theme-toggle {
   position: absolute;
@@ -962,11 +963,13 @@ body.light-theme h1, body.light-theme h2 {
 }
 
 /* ===== SECTION & CARD CONTRAST ===== */
-.section {
-  background: rgba(30, 41, 59, 0.96);
-  border-radius: var(--radius-lg);
-  margin-bottom: var(--space-xl);
-  box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+.section, .card, .project-card, .about-content, .skill-category, .contact-info {
+  color: #fff !important;
+  background: rgba(51, 65, 85, 0.98) !important;
+  border: 2px solid #8b5cf6 !important; /* TEMP: for debugging, remove after confirming */
+}
+.section * {
+  color: #fff !important;
 }
 .section--hero {
   background: linear-gradient(135deg, #232946 0%, #1a2233 100%) !important;
