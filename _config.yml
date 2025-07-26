@@ -63,7 +63,6 @@ navbar-links:
   Resume: "resume_purushoth.pdf"
 
 # Theme settings
-theme: beautiful-jekyll
 navbar-color: dark
 sidebar-color: dark
 footer-color: dark
