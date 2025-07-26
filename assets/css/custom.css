@@ -1247,6 +1247,10 @@ body nav.greedy-nav * {
   background: #232946 !important;
   color: #f5f5dc !important; /* Beige color for nav in dark mode */
   text-align: center !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 body .masthead__menu-item a,
@@ -1258,8 +1262,42 @@ body .site-title * {
   text-align: center !important;
 }
 
+/* ===== HERO TEXT VISIBILITY FIX ===== */
+body .hero__title,
+body .hero__subtitle,
+body .hero__description {
+  color: #f5f5dc !important; /* Solid beige for hero text */
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+}
+
+body .hero__title {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  color: #f5f5dc !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body .hero__subtitle {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #f5f5dc !important;
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+}
+
+body .hero__description {
+  font-size: 1.2rem !important;
+  color: rgba(245, 245, 220, 0.4) !important; /* Keep description with transparency */
+  margin: 1rem auto 2rem auto !important;
+  padding: 0 !important;
+}
+
 /* ===== TEXT COLOR OVERHAUL ===== */
-/* Dark mode - beige text with 40% transparency */
+/* Dark mode - beige text with 40% transparency for most content */
 body h1, body h2, body h3, body h4, body h5, body h6,
 body p, body li, body span, body div {
   color: rgba(245, 245, 220, 0.4) !important; /* Beige with 40% transparency */
