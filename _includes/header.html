@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-<script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
+{% comment %} Only keep the theme's default navigation and the dark/light mode toggle button in the main navbar. Remove all custom/duplicate navbars. {% endcomment %}
 <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom top-nav-regular">
   <a class="navbar-brand navbar-brand-logo" href="/">{{ site.title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">

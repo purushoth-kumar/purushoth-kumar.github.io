@@ -5,13 +5,19 @@ subtitle: "Senior Applied Data Scientist"
 description: "Transforming data into actionable insights through advanced analytics, machine learning, and causal inference. Passionate about building recommendation systems and driving product decisions with data."
 ---
 
-# R M Purushoth Kumar
-
-## Senior Applied Data Scientist
-
-Transforming data into actionable insights through advanced analytics, machine learning, and causal inference. Passionate about building recommendation systems and driving product decisions with data.
-
-[View Projects](/projects/) &nbsp; | &nbsp; [About Me](/about/)
+<div class="hero-section" style="text-align: center; padding: 4rem 0 2rem 0;">
+  <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">R M Purushoth Kumar</h1>
+  <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--accent-teal);">Senior Applied Data Scientist</h2>
+  <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; line-height: 1.6;">
+    Transforming data into actionable insights through advanced analytics, machine learning, and causal inference.<br>
+    Passionate about building recommendation systems and driving product decisions with data.
+  </p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem;">
+    <a href="/projects/" class="btn btn-primary">View Projects</a>
+    <a href="/about/" class="btn btn-secondary">About Me</a>
+    <a href="/resume_purushoth.pdf" class="btn btn-secondary">Resume</a>
+  </div>
+</div>
 
 ---
 
@@ -51,4 +57,7 @@ Proficient in modern data science tools and technologies:
 
 I'm always interested in new opportunities and collaborations. Let's discuss how we can work together to solve complex data challenges.
 
-[Get In Touch](mailto:purushoth.iitkgp@gmail.com) &nbsp; | &nbsp; [LinkedIn](https://linkedin.com/in/purushothkumar)
+<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+  <a href="mailto:purushoth.iitkgp@gmail.com" class="btn btn-primary">Get In Touch</a>
+  <a href="https://linkedin.com/in/purushothkumar" class="btn btn-secondary" target="_blank">LinkedIn</a>
+</div>
