@@ -1,32 +1,20 @@
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 <script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
-<div class="masthead" style="position: relative; background: #232946 !important; color: #f5f5dc !important; text-align: center !important; width: 100% !important; display: flex !important; justify-content: center !important; align-items: center !important;">
-  <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" style="position: absolute !important; top: 12px !important; right: 24px !important; width: 38px !important; height: 38px !important; border-radius: 50% !important; border: none !important; background: #8b5cf6 !important; color: #ffffff !important; font-size: 1.2rem !important; cursor: pointer !important; z-index: 1100 !important; display: flex !important; align-items: center !important; justify-content: center !important; flex-shrink: 0 !important; flex-grow: 0 !important;">🌙</button>
-  <div class="masthead__inner-wrap" style="background: transparent !important; text-align: center !important; width: 100% !important; display: flex !important; justify-content: center !important; align-items: center !important;">
-    <div class="masthead__menu" style="background: transparent !important; text-align: center !important; width: 100% !important; display: flex !important; justify-content: center !important; align-items: center !important;">
-      <nav id="site-nav" class="greedy-nav" style="background: transparent !important; text-align: center !important; width: 100% !important; display: flex !important; justify-content: center !important; align-items: center !important;">
-        <a class="site-title" href="{{ '/' | relative_url }}" style="color: #f5f5dc !important; text-align: center !important;">
-          <i class="fa fa-home"></i>
-        </a>
-        <ul class="visible-links" style="background: transparent !important; text-align: center !important; display: flex !important; justify-content: center !important; align-items: center !important; gap: 2rem !important; margin: 0 !important; padding: 0 !important; list-style: none !important;">
-          <li class="masthead__menu-item" style="background: transparent !important; text-align: center !important;"><a href="/projects/" style="color: #f5f5dc !important; background: transparent !important; text-align: center !important;">Projects</a></li>
-          <li class="masthead__menu-item" style="background: transparent !important; text-align: center !important;"><a href="/about/" style="color: #f5f5dc !important; background: transparent !important; text-align: center !important;">About</a></li>
-          <li class="masthead__menu-item" style="display: flex; flex-direction: column; align-items: center; background: transparent !important; text-align: center !important;">
-            <a href="/resume_purushoth.pdf" download style="width: 100%; color: #f5f5dc !important; background: transparent !important; text-align: center !important;">Download Resume</a>
-            <span style="display: block; width: 100%; font-size: 0.6em; color: #f5f5dc !important; margin: 0; padding: 0; text-align: center !important; background: transparent !important;">
-              {% assign resume = site.static_files | where: "path", "/resume_purushoth.pdf" | first %}
-              {% if resume %}
-                (Updated on: {{ resume.modified_time | date: "%B %d, %Y" }})
-              {% else %}
-                (file not found)
-              {% endif %}
-            </span>
-          </li>
-          <li class="nav-item">
-            <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
+<nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom top-nav-regular">
+  <a class="navbar-brand navbar-brand-logo" href="/">{{ site.title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navbar">
+    <ul class="navbar-nav ml-auto">
+      {% for link in site.navbar-links %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ link[1] }}">{{ link[0] }}</a>
+      </li>
+      {% endfor %}
+      <li class="nav-item">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
+      </li>
+    </ul>
   </div>
-</div> 
+</nav> 
